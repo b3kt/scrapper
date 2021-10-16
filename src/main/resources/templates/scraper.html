@@ -14,7 +14,7 @@
     <h2>Input Parameter</h2>
     <form method="POST" action="/">
         Search Query
-        <input type="text" name="q" placeholder="Search query" value="{query}"/>
+        <input type="text" name="q" placeholder="Search query e.g: handphone" style="width:400px" value="{query == null ? 'handphone' : query }"/>
         <button type="submit" >Submit</button>
     </form>
 

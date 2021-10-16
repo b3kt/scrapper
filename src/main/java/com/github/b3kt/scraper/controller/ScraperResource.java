@@ -44,7 +44,7 @@ public class ScraperResource {
 	@Produces(MediaType.TEXT_HTML)
 	public TemplateInstance get(@QueryParam("name") String name) {
 		return scraper.data("targetUrl", scraperUrl).data("resultPath", scraperResultPath).data("data", null)
-				.data("query", "handphone").data("name", name);
+				.data("query", null).data("name", name);
 	}
 
 	@POST
